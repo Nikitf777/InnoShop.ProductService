@@ -20,8 +20,8 @@ builder.Services
 
 var app = builder.Build();
 
-app.UseAuthorization();
 app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapGet("/public", () => "Public endpoint!");
 app.MapGet("/secured", () => "Secured endpoint!").RequireAuthorization();
