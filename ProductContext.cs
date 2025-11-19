@@ -6,7 +6,7 @@ namespace InnoShop.UserService;
 
 public class ProductContext : DbContext
 {
-	public DbSet<Product> Users { get; set; }
+	public DbSet<Product> Products { get; set; }
 
 	public ProductContext()
 	{
